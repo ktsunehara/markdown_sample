@@ -1,0 +1,18 @@
+<%
+text = <<'EOS'
+
+# 大見出し
+
+## 中見出し
+
+### 小見出し
+
+```rb
+puts "hello world
+```
+
+
+EOS
+%>
+
+<%= markdown(text).html_safe %>
